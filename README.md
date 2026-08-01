@@ -21,11 +21,20 @@ Four intelligence layers. Seven MCP tools. Multi-repo workspaces. Auto-sync hook
 
 </div>
 
-Your AI coding agent reads files. It doesn't know which ones change together, which ones are dead, or why they were built the way they were. It has the source code and no memory of how the codebase got there.
+![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
+![Stars](https://img.shields.io/github/stars/2233admin/repowise)
+![Last Commit](https://img.shields.io/github/last-commit/2233admin/repowise)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB)
 
-repowise fixes that. It indexes your codebase into four intelligence layers — dependency graph, git history, auto-generated documentation, and architectural decisions — and exposes them to Claude Code (and any MCP-compatible AI agent) through seven precisely designed tools. Multi-repo? Initialize a workspace and get cross-repo co-change detection, API contract extraction, and federated MCP queries across all your services. **27× fewer tokens per query. 36% cheaper. Same answer quality.**
+- **One-liner**: Codebase intelligence layer for AI coding agents — four layers, seven MCP tools.
+- **For**: Your AI agent reads files but doesn't know what changes together, what's dead, or why decisions were made.
+- **Not for**: You just want semantic search or a docs generator, without git/graph intelligence.
 
-The result: your agent answers *"why does auth work this way?"* instead of *"here is what auth.ts contains."*
+你的 AI coding agent 会读文件。但它不知道哪些文件总是一起改、哪些是死代码、当初为什么这么设计。它有源代码，但没有代码库如何演化的记忆。
+
+repowise 就是来填这个坑的。它把你的代码库索引成四个智能层——依赖图、git 历史、自动生成的文档和架构决策——然后通过七个精心设计的工具暴露给 Claude Code（和任何 MCP 兼容的 AI agent）。多仓库？初始化一个 workspace，获得跨仓库共同变更检测、API 合同提取，以及跨所有服务的联邦 MCP 查询。**每次查询省 27 倍 token。便宜 36%。答案质量不变。**
+
+结果是：你的 agent 回答*"为什么认证是这么工作的？"*而不是*"这是 auth.ts 的内容。"*
 
 ---
 
@@ -639,6 +648,12 @@ repowise --help
 Full guide including how to add languages and LLM providers: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
+
+## Related Projects
+
+- [design-pipeline](https://github.com/2233admin/design-pipeline) — Design pipeline for AI agents
+- [performance-patterns-skill](https://github.com/2233admin/performance-patterns-skill) — Route-first perf troubleshooting skill
+- [markdown-memory](https://github.com/2233admin/markdown-memory) — File-driven AI memory bridge
 
 ## License
 
